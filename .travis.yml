@@ -3,6 +3,9 @@ cache: bundler
 
 addons:
   chrome: stable
+  apt:
+    packages:
+      - chromium-chromedriver
 
 rvm:
   - 2.3.7
