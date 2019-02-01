@@ -1,14 +1,21 @@
 language: ruby
 cache: bundler
 
-addons:
-  chrome: stable
-  apt:
-    packages:
-      - chromium-chromedriver
-
 rvm:
   - 2.3.7
+
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+before_script:
+  - sh -e /etc/init.d/xvfb start
+
+
 
 before_script: 'bundle install'
 before_script: '[ -d reports] && rm -rf reports'
