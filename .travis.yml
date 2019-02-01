@@ -5,20 +5,15 @@ rvm:
   - 2.3.7
 
 addons:
-  chrome: stable
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
 
-#before_install:
- #- sudo apt-get update
- #- sudo apt-get install chromium-chromedriver
-
+      
 before_script:
-  - wget http://chromedriver.storage.googleapis.com/2.10/chromedriver_linux64.zip
-  - unzip chromedriver_linux64.zip -d /home/travis/virtualenv/python2.7.9/
-  - export CHROME_BIN=chromium-browser
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3
-
+  - export DISPLAY=:99.0 && sh -e /etc/init.d/xvfb start && sleep 3
 
 
 before_script: "bundle install"
