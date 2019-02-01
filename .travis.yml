@@ -5,6 +5,8 @@ rvm:
   - 2.3.7
 
 before_script: 'bundle install'
+before_script: '[ -d reports] && rm -rf reports'
+before_script: 'mkdir reports'
 script: 'bundle exec cucumber'
 
 branches:
