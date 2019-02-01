@@ -1,7 +1,7 @@
 ##YAML Template
 ---
 #profiles
-default: -p html_report -p chrome -p env_qa
+default: -p html_report -p chrome_headless -p env_ci
 ##Others Browsers
 default_firefox: -p html_report -p firefox -p env_qa
 default_chrome_headless: -p html_report -p chrome_headless -p env_qa
