@@ -1,4 +1,4 @@
 test:
   override:
     - mkdir -p $CIRCLE_TEST_REPORTS/reports
-    - bundle exec cucumber
+    - bundle exec cucumber 
