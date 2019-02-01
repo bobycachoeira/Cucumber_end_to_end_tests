@@ -17,20 +17,17 @@ install: # Install ChromeDriver (64bits; replace 64 with 32 for 32bits).
 
 before_script:
   - sh -e /etc/init.d/xvfb start
+  - bundle install
+  - [ -d reports] && rm -rf reports
+  - mkdir reports
 
 
-
-before_script: 'bundle install'
-before_script: '[ -d reports] && rm -rf reports'
-before_script: 'mkdir reports'
-
-
-script: 'bundle exec cucumber'
 
 script:
   - whereis google-chrome-stable
   - whereis chromedriver
-  r
+  - bundle exec cucumber
+
 
 branches:
   only:
