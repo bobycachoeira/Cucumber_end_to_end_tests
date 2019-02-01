@@ -5,7 +5,7 @@ rvm:
   - 2.3.7
 
 before_script: 'bundle install'
-script: 'cucumber'
+script: 'bundle exec cucumber'
 
 branches:
   only:
