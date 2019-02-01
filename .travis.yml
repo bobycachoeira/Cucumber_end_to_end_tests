@@ -2,7 +2,7 @@ language: ruby
 cache: bundler
 
 rvm:
-  - 2.3
+  - 2.3.7
 
 before_script: 'bundle install'
 script: 'cucumber'
@@ -13,4 +13,4 @@ branches:
 
 notifications:
   email:
-    - shashikant.jagtap@aol.co.uk
+    - bobycachoeira@gmail.com
