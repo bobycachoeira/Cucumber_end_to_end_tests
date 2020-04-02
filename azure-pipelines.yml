@@ -20,4 +20,4 @@ steps:
   displayName: 'bundle install'
 
 - script: bundle exec cucumber
-  displayName: 'bundle exec rake'
+  displayName: 'bundle exec cucumber'
