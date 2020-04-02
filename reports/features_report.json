@@ -1,0 +1,658 @@
+[
+  {
+    "uri": "features/specs/login.feature",
+    "id": "login-teste-practice",
+    "keyword": "Funcionalidade",
+    "name": "Login Teste Practice",
+    "description": "    Sendo um usuário do sistema de teste\n    Possa efetuar login no sistema de testes\n    Para que eu possa efetuar compras no sistema de testes",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@login",
+        "line": 2
+      },
+      {
+        "name": "@all",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Estar na pagina HOME do My Store",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29500
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 23300
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29200
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja na pagina HOME do My Store",
+            "line": 9,
+            "match": {
+              "location": "features/steps/login_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/steps/login_steps.rb:6:in `\"que eu esteja na pagina HOME do My Store\"'\nfeatures/specs/login.feature:9:in `Dado que eu esteja na pagina HOME do My Store'",
+              "duration": 2889798400
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-teste-practice;efetuando-login-com-usuário-e-senha-inválidos",
+        "keyword": "Cenario",
+        "name": "Efetuando login com usuário e senha inválidos",
+        "description": "",
+        "line": 12,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@all",
+            "line": 2
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que clique na barra de contacts no menu Sign in",
+            "line": 13,
+            "match": {
+              "location": "features/steps/login_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "visualize a área Already Registered?",
+            "line": 14,
+            "match": {
+              "location": "features/steps/login_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "informar no campo de email o valor \"emailerrado\"",
+            "line": 15,
+            "match": {
+              "location": "features/steps/login_steps.rb:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "informar no campo password o valor \"senha errada\"",
+            "line": 16,
+            "match": {
+              "location": "features/steps/login_steps.rb:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "clicar no botão Sign in",
+            "line": 17,
+            "match": {
+              "location": "features/steps/login_steps.rb:28"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deve ser apresentado a mensagem de erro \"Invalid email address..\"",
+            "line": 18,
+            "match": {
+              "location": "features/steps/login_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:43"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/support/helper.rb:18:in `take_screenshot'\n./features/support/env.rb:49:in `After'",
+              "duration": 2254547000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Estar na pagina HOME do My Store",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20800
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja na pagina HOME do My Store",
+            "line": 9,
+            "match": {
+              "location": "features/steps/login_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/steps/login_steps.rb:6:in `\"que eu esteja na pagina HOME do My Store\"'\nfeatures/specs/login.feature:9:in `Dado que eu esteja na pagina HOME do My Store'",
+              "duration": 2256343400
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-teste-practice;efetuando-login-com-campos-e-mail-e-senha-vazios",
+        "keyword": "Cenario",
+        "name": "Efetuando login com campos e-mail e senha vazios",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@all",
+            "line": 2
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que clique na barra de contacts no menu Sign in",
+            "line": 21,
+            "match": {
+              "location": "features/steps/login_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "visualize a área Already Registered?",
+            "line": 22,
+            "match": {
+              "location": "features/steps/login_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "informar no campo de email o valor \"\"",
+            "line": 23,
+            "match": {
+              "location": "features/steps/login_steps.rb:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "informar no campo password o valor \"\"",
+            "line": 24,
+            "match": {
+              "location": "features/steps/login_steps.rb:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "clicar no botão Sign in",
+            "line": 25,
+            "match": {
+              "location": "features/steps/login_steps.rb:28"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deve ser apresentado a mensagem de erro \"An email address required.\"",
+            "line": 26,
+            "match": {
+              "location": "features/steps/login_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:43"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/support/helper.rb:18:in `take_screenshot'\n./features/support/env.rb:49:in `After'",
+              "duration": 2260200400
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59300
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Estar na pagina HOME do My Store",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54300
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 71000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja na pagina HOME do My Store",
+            "line": 9,
+            "match": {
+              "location": "features/steps/login_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/steps/login_steps.rb:6:in `\"que eu esteja na pagina HOME do My Store\"'\nfeatures/specs/login.feature:9:in `Dado que eu esteja na pagina HOME do My Store'",
+              "duration": 2263723300
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-teste-practice;efetuando-login-sem-informar-e-mail",
+        "keyword": "Cenario",
+        "name": "Efetuando login sem informar e-mail",
+        "description": "",
+        "line": 28,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@all",
+            "line": 2
+          },
+          {
+            "name": "@nilson",
+            "line": 27
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que clique na barra de contacts no menu Sign in",
+            "line": 29,
+            "match": {
+              "location": "features/steps/login_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "visualize a área Already Registered?",
+            "line": 30,
+            "match": {
+              "location": "features/steps/login_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "informar no campo de email o valor \"\"",
+            "line": 31,
+            "match": {
+              "location": "features/steps/login_steps.rb:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "informar no campo password o valor \"teste\"",
+            "line": 32,
+            "match": {
+              "location": "features/steps/login_steps.rb:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "clicar no botão Sign in",
+            "line": 33,
+            "match": {
+              "location": "features/steps/login_steps.rb:28"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deve ser apresentado a mensagem de erro \"An email address required.\"",
+            "line": 34,
+            "match": {
+              "location": "features/steps/login_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:43"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/support/helper.rb:18:in `take_screenshot'\n./features/support/env.rb:49:in `After'",
+              "duration": 2267025200
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49400
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Estar na pagina HOME do My Store",
+        "description": "",
+        "line": 8,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40700
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/env.rb:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57300
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que eu esteja na pagina HOME do My Store",
+            "line": 9,
+            "match": {
+              "location": "features/steps/login_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/steps/login_steps.rb:6:in `\"que eu esteja na pagina HOME do My Store\"'\nfeatures/specs/login.feature:9:in `Dado que eu esteja na pagina HOME do My Store'",
+              "duration": 2258256100
+            }
+          }
+        ]
+      },
+      {
+        "id": "login-teste-practice;efetuando-login-sem-informar-senha",
+        "keyword": "Cenario",
+        "name": "Efetuando login sem informar senha",
+        "description": "",
+        "line": 36,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login",
+            "line": 2
+          },
+          {
+            "name": "@all",
+            "line": 2
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que clique na barra de contacts no menu Sign in",
+            "line": 37,
+            "match": {
+              "location": "features/steps/login_steps.rb:9"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "visualize a área Already Registered?",
+            "line": 38,
+            "match": {
+              "location": "features/steps/login_steps.rb:14"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "informar no campo de email o valor \"teste@teste.com\"",
+            "line": 39,
+            "match": {
+              "location": "features/steps/login_steps.rb:18"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "informar no campo password o valor \"\"",
+            "line": 40,
+            "match": {
+              "location": "features/steps/login_steps.rb:23"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "clicar no botão Sign in",
+            "line": 41,
+            "match": {
+              "location": "features/steps/login_steps.rb:28"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "deve ser apresentado a mensagem de erro \"Password is required.\"",
+            "line": 42,
+            "match": {
+              "location": "features/steps/login_steps.rb:32"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/env.rb:43"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Failed to open TCP connection to selenium-hub:4444 (getaddrinfo: Este host não é conhecido. ) (SocketError)\n./features/support/helper.rb:18:in `take_screenshot'\n./features/support/env.rb:49:in `After'",
+              "duration": 2255912900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.23.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 27400
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
