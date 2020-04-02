@@ -16,6 +16,7 @@ steps:
 
 - script: |
     gem install bundler
+    gem install bundler:1.16.1
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 
