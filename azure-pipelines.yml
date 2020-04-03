@@ -16,9 +16,19 @@ steps:
 
 - script: |
     gem install bundler
-    gem install bundler:1.16.1
     bundle install --retry=3 --jobs=4
   displayName: 'bundle install'
 
-- script: bundle exec cucumber
-  displayName: 'bundle exec cucumber'
+- script: bundle exec cucumber -p ci
+  displayName: 'bundle exec cucumber -p ci'
+
+- task: CmdLine@2
+  inputs:
+    script: 'ls $(Build.SourcesDirectory)/reports'
+  displayName: 'Ver pasta'
+
+- task: PublishTestResults@2
+  inputs:
+    testResultsFiles: $(Build.SourcesDirectory)/reports/TEST-*.xml
+    searchFolder: '$(testFilesFolder)'
+    failTaskOnFailedTests: true

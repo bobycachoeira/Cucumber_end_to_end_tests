@@ -1,5 +1,5 @@
 default: --no-source --color --format pretty -p chrome
-ci: -p chrome_headless -p ci_env
+ci: -p chrome_headless -p ci_env -p json_report
 qa: -p html_report -p chrome -p qa_env
 
 
@@ -21,3 +21,4 @@ chrome_headless: BROWSER=chrome_headless
 html_report: --format pretty --format html --out=reports/features_report.html
 html_report2: --format pretty --format html --out reports/report<%= ENV['TEST_ENV_NUMBER'] %>.html
 json_report: --format progress --format json --out=reports/features_report.json
+json_report2: --format junit --out=reports/
